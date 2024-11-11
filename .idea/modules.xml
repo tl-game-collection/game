@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/game.iml" filepath="$PROJECT_DIR$/game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new-algorithm/new-algorithm.iml" filepath="$PROJECT_DIR$/new-algorithm/new-algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new-core/new-core.iml" filepath="$PROJECT_DIR$/new-core/new-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new-protocol/new-protocol.iml" filepath="$PROJECT_DIR$/new-protocol/new-protocol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new-server/new-server.iml" filepath="$PROJECT_DIR$/new-server/new-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new-sms/new-sms.iml" filepath="$PROJECT_DIR$/new-sms/new-sms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new-wechat/new-wechat.iml" filepath="$PROJECT_DIR$/new-wechat/new-wechat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new-xpush/new-xpush.iml" filepath="$PROJECT_DIR$/new-xpush/new-xpush.iml" />
+    </modules>
+  </component>
+</project>

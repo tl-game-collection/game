@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="game" target="1.5" />
+      <module name="new-algorithm" target="1.8" />
+      <module name="new-core" target="1.8" />
+      <module name="new-protocol" target="1.8" />
+      <module name="new-server" target="1.8" />
+      <module name="new-sms" target="1.8" />
+      <module name="new-wechat" target="1.8" />
+      <module name="new-xpush" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="new-algorithm" options="-proc:none -Xlint:deprecation -Xlint:unchecked" />
+      <module name="new-core" options="-proc:none -Xlint:deprecation -Xlint:unchecked" />
+      <module name="new-protocol" options="-proc:none -Xlint:deprecation -Xlint:unchecked" />
+      <module name="new-server" options="-proc:none -Xlint:deprecation -Xlint:unchecked" />
+      <module name="new-sms" options="-proc:none -Xlint:deprecation -Xlint:unchecked" />
+      <module name="new-wechat" options="-proc:none -Xlint:deprecation -Xlint:unchecked" />
+      <module name="new-xpush" options="-proc:none -Xlint:deprecation -Xlint:unchecked" />
+    </option>
+  </component>
+</project>

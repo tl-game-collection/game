@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/new-algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/new-core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/new-protocol" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/new-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/new-sms" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/new-wechat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/new-xpush" vcs="Git" />
+  </component>
+</project>

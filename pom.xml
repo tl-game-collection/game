@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.xiuxiu.app</groupId>
+    <artifactId>game</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <name>game</name>
+    <modules>
+        <module>new-server</module>
+        <module>new-core</module>
+        <module>new-protocol</module>
+        <module>new-algorithm</module>
+        <module>new-xpush</module>
+        <module>new-wechat</module>
+        <module>new-sms</module>
+    </modules>
+
+    <properties>
+        <java.source.jdk>1.8</java.source.jdk>
+    </properties>
+</project>

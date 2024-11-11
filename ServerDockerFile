@@ -1,0 +1,11 @@
+FROM maven:3.9.9-amazoncorretto-8-alpine AS builder
+WORKDIR /data
+COPY . .
+RUN mvn clean package -B -DskipTests
+
+
+FROM amazoncorretto:8-alpine
+ENV TZ Asia/Shanghai
+WORKDIR /data
+COPY --from=builder /data/new-server/target .
+CMD ["java", "-jar", "/data/new-server-2.0.0-SNAPSHOT.jar"]
