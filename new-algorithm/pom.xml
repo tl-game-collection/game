@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xiuxiu.app</groupId>
+    <artifactId>new-algorithm</artifactId>
+    <name>new-algorithm</name>
+    <version>${project.release.version}</version>
+
+    <properties>
+        <project.release.version>2.0.0-SNAPSHOT</project.release.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.source.jdk>1.8</java.source.jdk>
+    </properties>
+    <build>
+        <finalName>${project.name}-${project.version}</finalName>
+        <directory>${project.basedir}/target</directory>
+        <sourceDirectory>${project.basedir}/src</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/test</testSourceDirectory>
+        <outputDirectory>${project.build.directory}/classes</outputDirectory>
+        <testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
+
+        <resources>
+            <resource>
+                <directory>${project.basedir}/cnf</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>dev/**/*</exclude>
+                    <exclude>product/**/*</exclude>
+                </excludes>
+                <targetPath>${project.build.directory}/cnf</targetPath>
+            </resource>
+            <resource>
+                <directory>${project.basedir}/cnf/${profiles.active}/META-INF</directory>
+                <targetPath>${project.build.directory}/classes/META-INF</targetPath>
+            </resource>
+            <resource>
+                <directory>${project.basedir}/cnf/${profiles.active}</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>META-INF/**/*</exclude>
+                </excludes>
+                <targetPath>${project.build.directory}/cnf</targetPath>
+            </resource>
+        </resources>
+
+        <testResources>
+            <testResource>
+                <directory>${project.basedir}/cnf</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>dev/**/*</exclude>
+                    <exclude>product/**/*</exclude>
+                </excludes>
+                <targetPath>${project.build.directory}/cnf</targetPath>
+            </testResource>
+            <testResource>
+                <directory>${project.basedir}/cnf/${profiles.active}/META-INF</directory>
+                <targetPath>${project.build.directory}/classes/META-INF</targetPath>
+            </testResource>
+            <testResource>
+                <directory>${project.basedir}/cnf/${profiles.active}</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>META-INF/**/*</exclude>
+                </excludes>
+                <targetPath>${project.build.directory}/cnf</targetPath>
+            </testResource>
+        </testResources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.1</version>
+                <configuration>
+                    <source>${java.source.jdk}</source>
+                    <target>${java.source.jdk}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <compilerArgs>
+                        <arg>-proc:none</arg>
+                        <arg>-Xlint:deprecation</arg>
+                        <arg>-Xlint:unchecked</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/libs</outputDirectory>
+                            <excludeTransitive>false</excludeTransitive>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <profiles.active>dev</profiles.active>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>product</id>
+            <properties>
+                <profiles.active>product</profiles.active>
+                <project.release.version>2.0.0</project.release.version>
+            </properties>
+        </profile>
+    </profiles>
+
+    <!-- <repositories>
+        <repository>
+            <id>xiuxiu-central</id>
+            <name>xiuxiu-central</name>
+            <url>http://maven.xiuxiuhy.com/repository/xiuxiu-central/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-xiuxiu-release</id>
+            <url>http://maven.xiuxiuhy.com/repository/xiuxiu-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-xiuxiu-snapshot</id>
+            <url>http://maven.xiuxiuhy.com/repository/xiuxiu-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement> -->
+
+
+</project>

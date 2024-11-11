@@ -1,0 +1,31 @@
+{
+	"allAction":[],
+	"playerInfo":[],
+	"roomInfo":{
+		"bankerIndex":0,
+		"gameSubType":4,
+		"gameType":20013,
+		"roomId":690227,
+		"roomType":3,
+		"rule":{
+			"gameSubType":4,
+			"leaveArenaValue":0,
+			"playerMinNum":2,
+			"clubUid":27059,
+			"sgCardMulType":0,
+			"cowBankerType":4,
+			"displayBottomScore":2049,
+			"deputyDivide":0,
+			"playerNum":10,
+			"timeLimit":999,
+			"pushNoteLimit":0,
+			"costModelValue":0,
+			"costModel":1,
+			"cowEndPoint":2049,
+			"minArena":0,
+			"playMethod":0,
+			"cardNumber":2
+		}
+	},
+	"uid":38798
+}

@@ -1,0 +1,35 @@
+{
+	"allAction":[],
+	"playerInfo":[],
+	"roomInfo":{
+		"bankerIndex":1,
+		"gameSubType":1,
+		"gameType":20005,
+		"roomId":332492,
+		"roomType":3,
+		"rule":{
+			"gameSubType":1,
+			"loopLimit":10,
+			"fgfEndPointMul":1,
+			"fgfBankerType":0,
+			"leaveArenaValue":0,
+			"clubUid":86128,
+			"playerMinNum":2,
+			"fgfCompareLoop":1,
+			"displayBottomScore":2,
+			"fgfCompareRule":0,
+			"fgfStuffyLoop":1,
+			"deputyDivide":0,
+			"playerNum":8,
+			"timeLimit":999,
+			"costModelValue":0,
+			"costModel":1,
+			"fgfThreeAward":0,
+			"fgfTimeout":30,
+			"minArena":0,
+			"playMethod":0,
+			"fgfSelectNote":1
+		}
+	},
+	"uid":261
+}

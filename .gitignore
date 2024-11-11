@@ -25,4 +25,4 @@ target/
 .vscode/
 
 /**/logs/
-/.idea
+/.idea/**

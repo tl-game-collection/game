@@ -1,0 +1,140 @@
+[
+    {
+        "name" : "core",
+        "path" : "logs/core",
+        "preFixFileName" : "core_",
+        "level" : "debug"
+    },
+    {
+        "name" : "net",
+        "path" : "logs/net",
+        "preFixFileName" : "net_",
+        "level" : "debug"
+    },
+    {
+        "name" : "conn",
+        "path" : "logs/conn",
+        "preFixFileName" : "conn_",
+        "level" : "debug"
+    },
+    {
+        "name" : "cmd",
+        "path" : "logs/cmd",
+        "preFixFileName" : "cmd_",
+        "level" : "debug"
+    },
+    {
+        "name" : "hb",
+        "path" : "logs/hb",
+        "preFixFileName" : "hb_",
+        "level" : "debug"
+    },
+    {
+        "name" : "login",
+        "path" : "logs/login",
+        "preFixFileName" : "login_",
+        "level" : "debug"
+    },
+    {
+        "name" : "api",
+        "path" : "logs/api",
+        "preFixFileName" : "api_",
+        "level" : "debug"
+    },
+    {
+        "name" : "db",
+        "path" : "logs/db",
+        "preFixFileName" : "db_",
+        "level" : "debug"
+    },
+    {
+        "name" : "account",
+        "path" : "logs/account",
+        "preFixFileName" : "account_",
+        "level" : "debug"
+    },
+    {
+        "name" : "player",
+        "path" : "logs/player",
+        "preFixFileName" : "player_",
+        "level" : "debug"
+    },
+    {
+        "name" : "friend",
+        "path" : "logs/friend",
+        "preFixFileName" : "friend_",
+        "level" : "debug"
+    },
+    {
+        "name" : "group",
+        "path" : "logs/group",
+        "preFixFileName" : "group_",
+        "level" : "debug"
+    },
+    {
+        "name" : "room",
+        "path" : "logs/room",
+        "preFixFileName" : "room_",
+        "level" : "debug"
+    },
+    {
+        "name" : "chat",
+        "path" : "logs/chat",
+        "preFixFileName" : "chat_",
+        "level" : "debug"
+    },
+    {
+        "name" : "arena",
+        "path" : "logs/arena",
+        "preFixFileName" : "arena_",
+        "level" : "debug"
+    },
+    {
+        "name" : "mail",
+        "path" : "logs/mail",
+        "preFixFileName" : "mail_",
+        "level" : "debug"
+    },
+    {
+        "name" : "arenaValue",
+        "path" : "logs/arenaValue",
+        "preFixFileName" : "arena_value_",
+        "level" : "debug"
+    },
+    {
+        "name" : "leagueArenaValue",
+        "path" : "logs/leagueArenaValue",
+        "preFixFileName" : "league_arena_value_",
+        "level" : "debug"
+    },
+    {
+        "name" : "league",
+        "path" : "logs/league",
+        "preFixFileName" : "league_",
+        "level" : "debug"
+    },
+    {
+        "name" : "online",
+        "path" : "logs/online",
+        "preFixFileName" : "online_",
+        "level" : "debug"
+    },
+    {
+        "name" : "playerLogin",
+        "path" : "logs/playerLogin",
+        "preFixFileName" : "player_login_",
+        "level" : "debug"
+    },
+    {
+        "name" : "playerLogout",
+        "path" : "logs/playerLogout",
+        "preFixFileName" : "player_logout_",
+        "level" : "debug"
+    },
+    {
+        "name" : "club",
+        "path" : "logs/club",
+        "preFixFileName" : "club",
+        "level" : "debug"
+    }
+]

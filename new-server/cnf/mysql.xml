@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--
+    environments:开发模式
+    work:工作模式
+    default="development"，id="development"，两个的属性值必须一致
+     -->
+    <settings>
+        <setting name="defaultStatementTimeout" value="60" />
+    </settings>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <dataSource type="com.xiuxiu.app.server.db.datSource.C3p0DataSourceFactory">
+                <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+                <property name="jdbcUrl" value="jdbc:mysql://mysql-local:3306/game_yyf?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC" />
+                <property name="user" value="game"/>
+                <property name="password" value="game123$%^"/>
+                <property name="initialPoolSize" value="3" />
+                <!--连接池中保留的最大连接数。Default: 15 -->
+                <property name="maxPoolSize" value="30" />
+                <!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
+                <property name="acquireIncrement" value="3" />
+                <!--最大空闲时间,60秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+                <property name="maxIdleTime" value="25000" />
+                <property name="maxStatements" value="0" />
+                <!--maxStatementsPerConnection定义了连接池内单个连接所拥有的最大缓存statements数。Default: 0 -->
+                <property name="maxStatementsPerConnection" value="0" />
+                <property name="numHelperThreads" value="3" />
+                <property name="preferredTestQuery" value="SELECT 1" />
+                <!--连接关闭时默认将所有未提交的操作回滚。Default: false -->
+                <property name="autoCommitOnClose" value="false"/>
+                <!-- 断线重连配置 -->
+                <property name="breakAfterAcquireFailure" value="false" />
+                <property name="testConnectionOnCheckout" value="true" />
+                <property name="testConnectionOnCheckin" value="true" />
+                <property name="idleConnectionTestPeriod" value="18000" />
+                <!--定义在从数据库获取新连接失败后重复尝试的次数。Default: 30 -->
+                <property name="acquireRetryAttempts" value="30" />
+                <!--两次连接中间隔时间，单位毫秒。Default: 1000 -->
+                <property name="acquireRetryDelay" value="1000" />
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 在配置文件中 关联包下的 接口类-->
+    <mappers>
+        <mapper class="com.xiuxiu.app.server.db.dao.AccountMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IAccountUidMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.ILogAccountMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.ILogAccountRemainMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.PlayerMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.INicknameMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.ILocationInfoMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.MailMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IMailBoxMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IForbidMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IFloorMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IBoxMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IBoxRoomScorePlayerIdMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.BoxRoomScoreMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.RoomMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.RoomScoreMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IClubUidMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IClubInfoMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IClubMemberMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IClubMemberExtMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IClubActivityMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IClubGoldRecordMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IClubRewardValueRecordMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IClubActivityGoldRewardRecordMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IRankDataMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.RecommendMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IAssistantWeChatMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.ITodayStatisticsMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IMoneyExpendRecordMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IPlayerMoneyConsumeRecordMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IMoneyExpendRecordDetailMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IUniqueCodeMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IUpDownGoldOrderMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IDownLineGameRecordMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IBoxArenaScoreMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IBoxArenaScoreInfoMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IBoxArenaScoreInfoPlayerIdMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IHundredRebRecordMapper"/>
+        <mapper class="com.xiuxiu.app.server.db.dao.IHundredBureauRecordMapper"/>
+        
+        <!-- lcadd -->
+        <mapper class="com.xiuxiu.app.server.db.dao.INoticeMapper"/>
+    </mappers>
+</configuration>

@@ -1,0 +1,10 @@
+1	5元红包场	孝感卡五星淘汰赛	hongbao	1	0	4	1	50	10001	1	{"playerNum":2,"maxFang":8,"flutter":1,"buyHorse":1,"playMethod":23,"endPoint":1}	80	bisai1	3,5,1,100	2,4,2,3,2,0
+2	10元红包场	襄阳卡五星淘汰赛	hongbao	1	0	9	1	80	10001	2	{"playerNum":3,"maxFang":8,"flutter":1,"buyHorse":1,"playMethod":23,"endPoint":1}	60	bisai2	3,10,1,200	2,9,6,2,6,3,3,3,0
+3	门票获得	跑得快淘汰赛	zs_3	1	0	2	0	0	20001	1	{"playerNum":2,"playMethod":59,"endPoint":1,"frame":2,"mustPut":1,"forcingMove":1}	80	bisai3	7,1	3,2,0
+4	5元红包场	跑得快淘汰赛	zs_3	1	0	3	7	1	20001	1	{"playerNum":2,"playMethod":59,"endPoint":1,"frame":2,"mustPut":1,"forcingMove":1}	80	bisai3	3,5	3,3,0
+5	6元红包场	牛牛	hongbao	1	0	3	1	20	20003	2	{"cowKingRazzType":2,"cowMultiple":4,"pushBankerType":2,"cowEndPoint":1,"pushNoteLimit":1,"playerNum":7,"playerMinNum":2}	0	bisai1	1,10	3,3,0
+6	7元红包场	牛牛	hongbao	1	0	14	1	20	20003	2	{"cowKingRazzType":2,"cowMultiple":4,"pushBankerType":2,"cowEndPoint":1,"pushNoteLimit":1,"playerNum":7,"playerMinNum":2}	0	bisai1	1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10	2,14,9,2,9,6,2,6,3,3,3,0
+7	8元红包场	一脚癞油	hongbao	1	0	2	1	20	10002	1	{"playerNum":2,"laiYou":1,"playMethod":8,"endPoint":1}	20	bisai1	1,1,1,2	2,2,0
+8	9元红包场	一脚癞油	hongbao	1	0	6	1	20	10002	1	{"playerNum":2,"laiYou":1,"playMethod":8,"endPoint":1}	40	bisai1	1,1,1,2	2,6,4,2,4,2,3,2,0
+9	9元红包场	斗地主	hongbao	1	0	3	1	20	20002	1	{"playMethod":1,"endPoint":1,"playerNum":3}	30	bisai1	1,1	3,3,0
+10	10元红包场	斗地主	hongbao	1	0	9	1	20	20002	1	{"playMethod":1,"endPoint":1,"playerNum":3}	10	bisai1	1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8,1,9	2,9,6,2,6,3,3,3,0
