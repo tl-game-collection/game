@@ -19,15 +19,10 @@ target/
 *.iml
 *.ipr
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
+*.log
 
 ### VS Code ###
 .vscode/
-/.idea/
+
 /**/logs/
+/.idea
