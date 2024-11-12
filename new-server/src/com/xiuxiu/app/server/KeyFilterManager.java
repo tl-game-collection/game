@@ -22,10 +22,12 @@ public class KeyFilterManager {
 
     public void init() {
         String words = FileUtil.readFileString(Config.KEY_FILTER_PATH);
+        Logs.CORE.info("初始化关键字数据中");
         if (StringUtil.isEmptyOrNull(words)) {
             return;
         }
         String[] wordArr = words.split("\r\n");
+        Logs.CORE.info("读取关键字条目数 %d 条", wordArr.length);
         List<String> wordList = new ArrayList<>();
         for (int i = 0, len = wordArr.length; i < len; ++i) {
             if (StringUtil.isEmptyOrNull(wordArr[i])) {
@@ -35,6 +37,7 @@ public class KeyFilterManager {
         }
         Collections.sort(wordList);
         this.dat.build(wordList);
+        Logs.CORE.info("关键字数据初始化完成");
     }
 
     public String replace(String word, char mask) {
