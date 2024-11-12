@@ -15,7 +15,7 @@
             <transactionManager type="JDBC" />
             <dataSource type="com.xiuxiu.app.server.db.datSource.C3p0DataSourceFactory">
                 <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
-                <property name="jdbcUrl" value="jdbc:mysql://mysql-local:3306/game_yyf?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC" />
+                <property name="jdbcUrl" value="jdbc:mysql://mysql-664097e5aaff-public.rds.bytepluses.com:3306/game_yyf?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC" />
                 <property name="user" value="game"/>
                 <property name="password" value="game123$%^"/>
                 <property name="initialPoolSize" value="3" />
