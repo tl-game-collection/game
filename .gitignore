@@ -19,8 +19,6 @@ target/
 *.iml
 *.ipr
 
-*.log
-
 ### VS Code ###
 .vscode/
 

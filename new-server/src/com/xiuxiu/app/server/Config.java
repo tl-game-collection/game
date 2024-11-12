@@ -55,7 +55,7 @@ public class Config {
 
     // redis info
 //    public static String REDIS_URL = "redis://r-bp1u6tt8pm66griq4s.redis.rds.aliyuncs.com:6379";
-    public static String REDIS_URL = "redis://redis-local:6379";
+    public static String REDIS_URL = "redis://redis:6379";
     // login info
     public static String APP_KEY = "#u)%P/Wht$~SQlzcq";
 
