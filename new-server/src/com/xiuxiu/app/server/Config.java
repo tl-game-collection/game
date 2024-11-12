@@ -31,7 +31,7 @@ public class Config {
     public static String API_SERVER_HOST = "0.0.0.0";
     public static int API_SERVER_PORT = 2301;
     public static String GATEWAY_SERVER_IP = "0.0.0.0";
-    public static String GATEWAY_SERVER_HOST = "54.254.199.232";
+    public static String GATEWAY_SERVER_HOST = "54.255.182.198";
     public static int GATEWAY_SERVER_PORT = 2000;
     public static int PLAYER_PROCESS_THREAD_NUM = Constant.MAX_THREAD_CNT;
     public static int ROOM_PROCESS_THREAD_NUM = Constant.MAX_THREAD_CNT;
