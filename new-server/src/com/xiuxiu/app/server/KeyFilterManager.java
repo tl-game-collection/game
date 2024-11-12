@@ -26,7 +26,9 @@ public class KeyFilterManager {
         if (StringUtil.isEmptyOrNull(words)) {
             return;
         }
-        String[] wordArr = words.split("\r\n");
+        String lineSeparator = System.getProperty("line.separator");
+        Logs.CORE.info("当前操作系统换行符：%s", lineSeparator);
+        String[] wordArr = words.split(lineSeparator);
         Logs.CORE.info("读取关键字条目数 %d 条", wordArr.length);
         List<String> wordList = new ArrayList<>();
         for (int i = 0, len = wordArr.length; i < len; ++i) {
