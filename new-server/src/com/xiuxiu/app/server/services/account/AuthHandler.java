@@ -303,11 +303,12 @@ public class AuthHandler implements HttpHandler {
             }
             resp.ret = ErrorCode.OK.getRet();
             resp.msg = ErrorCode.OK.getMsg();
-            if (Config.DEVELOP) {
-                resp.gateway = String.format("ws://%s:%d/game", Config.GATEWAY_SERVER_HOST, Config.GATEWAY_SERVER_PORT);
-            } else {
-                resp.gateway = String.format("ws://%s/game", Config.GATEWAY_SERVER_HOST);
-            }
+//            if (Config.DEVELOP) {
+//                resp.gateway = String.format("ws://%s:%d/game", Config.GATEWAY_SERVER_HOST, Config.GATEWAY_SERVER_PORT);
+//            } else {
+//                resp.gateway = String.format("ws://%s/game", Config.GATEWAY_SERVER_HOST);
+//            }
+            resp.gateway = String.format("ws://%s/ws/game", Config.GATEWAY_SERVER_HOST);
             resp.port = Config.GATEWAY_SERVER_PORT;
             String ip = httpExchange.getRequestHeaders().get("X-real-ip").get(0);
             Integer port = Config.TRANSFER.get(ip);
